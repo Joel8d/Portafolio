@@ -1,0 +1,91 @@
+$moradito: #5e17eb;
+$tifany: #00bfb2;
+$raisinBlack: #231f20;
+$patrickBlue: #202480;
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        
+        font-size: xx-large;
+        cursor: pointer;
+        color: $raisinBlack;
+    }
+
+    div{
+        padding: 0 10px;
+        span{
+        cursor: pointer;
+        }
+    }
+}
+
+.emphasis{
+    color: $moradito;
+}
+
+.intro{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        color: $raisinBlack;
+        margin: 30px;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    p{
+        font-size: xx-large;
+    }
+}
+
+.avatar{
+   margin-top: 50px; 
+   width: 210px;
+   height: 210px;
+   aspect-ratio: 2 / 2;
+   background-image: url('./multimedia/J8d.png');
+   background-size: cover;
+    
+}
+
+.ilustration{
+    width: 100%;
+    height: 500px;
+    background-image: url('./multimedia/Diseño\ sin\ título\ \(1\).svg');
+    background-color: red($color: #000000);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.description{
+    background-color: $moradito;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    div{
+        padding: 70px 0;
+        color: white;
+        width: 60%;
+        text-align: center;
+        
+        h2{
+            padding-bottom: 30px;
+        }
+    }
+}
