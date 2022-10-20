@@ -90,30 +90,26 @@ header div span {
   font-size: medium;
 }
 
-.card {
-  width: 920px;
-  height: 380px;
+.experiencia {
   margin-top: -120px;
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  grid-template-rows: 600px;
-  text-align: center;
-}
-
-.proyectos {
   width: 100%;
-  min-height: 700px;
+  height: auto -120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  text-align: center;
+}
+
 .card div {
   width: 300px;
   height: 380px;
-  background-color: red;
   border: 0.5px solid whitesmoke;
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
@@ -131,12 +127,60 @@ header div span {
   border-left: 1px solid whitesmoke;
 }
 
-@media all and (max-width: 900px) {
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
+  text-align: center;
+  padding: 40px;
+}
+.proyectos p {
+  padding-top: 10px;
+}
+
+.tarjetas-proyectos {
+  display: grid;
+  grid-template-rows: repeat(2, 240px);
+  grid-template-columns: repeat(4, 340px);
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.tarjeta-proyecto {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 191, 178, 0.35);
+  border: 0.5px solid whitesmoke;
+  border-radius: 20px;
+}
+.tarjeta-proyecto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border: 0.5px solid whitesmoke;
+  border-radius: 20px;
+}
+.tarjeta-proyecto :hover {
+  opacity: 0.3;
+}
+
+@media all and (max-width: 1260px) {
+  .card {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 380px);
+    width: 620px;
+    row-gap: 10px;
+  }
+}
+@media all and (max-width: 620px) {
   .card {
     grid-template-columns: 300px;
     grid-template-rows: repeat(3, 380px);
-    width: 300px;
-    height: 1140px;
+    width: 320px;
     row-gap: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
