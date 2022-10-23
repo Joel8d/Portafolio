@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
 
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     color: $raisinBlack;
   }
@@ -50,10 +50,10 @@ header {
     color: $raisinBlack;
     margin: 30px;
     font-weight: bolder;
-    font-size: 6vw;
+    font-size: 4vw;
   }
   p {
-    font-size: 4vw;
+    font-size: 2vw;
   }
 }
 
@@ -107,20 +107,23 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .card {
+  width: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-columns: repeat(4, 300px);
-  column-gap: 10px;
+  grid-template-columns: repeat(4, 250px);
+  gap: 10px;
   text-align: center;
+  justify-content: center;
 }
 
 .card {
   div {
-    width: 300px;
-    height: 340px;
+    width: 250px;
+    height: 300px;
     border: 0.5px solid whitesmoke;
     background-color: white;
     box-shadow: 0px 4px 17px -4px rgba(0, 0, 0, 0.75);
@@ -129,15 +132,10 @@ header {
       padding-top: 20px;
     }
     p {
-      font-size: large;
+      font-size: medium;
       padding: 10px 20px;
     }
   }
-}
-
-.segunda-columna {
-  border-right: 1px solid whitesmoke;
-  border-left: 1px solid whitesmoke;
 }
 
 .proyectos {
@@ -158,7 +156,7 @@ header {
     font-size: x-large;
   }
   p {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -167,14 +165,13 @@ header {
   margin: 10px;
   min-width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, max(360px));
-  grid-auto-rows: 240px;
+  grid-template-columns: repeat(auto-fit, max(260px));
+  grid-auto-rows: 185px;
   gap: 20px;
 }
 
 .tarjeta-proyecto {
-  width: 340px;
-  height: 240px;
+  width: 260px;
   border: 0.5px solid whitesmoke;
   border-radius: 20px;
   cursor: pointer;
@@ -202,10 +199,10 @@ footer {
 }
 
 .last-info {
-  width: 95%;
-  height: 200px;
+  width: 90%;
+  height: 120px;
   background-color: $patrickBlue;
-  margin-top: -100px;
+  margin-top: -60px;
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -216,6 +213,10 @@ footer {
   box-shadow: 0px 4px 17px -4px rgba(0, 0, 0, 0.75);
 
   p {
+    font-size: large;
+  }
+
+  h1 {
     font-size: x-large;
   }
 
@@ -227,7 +228,7 @@ footer {
     border: 2px solid $tifany;
     border-radius: 10px;
     color: white;
-    font-size: x-large;
+    font-size: large;
     cursor: pointer;
   }
 
@@ -237,16 +238,16 @@ footer {
 }
 
 .contact {
-  padding: 140px 0;
+  padding: 80px 0;
   color: white;
   text-align: center;
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   p {
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     color: whitesmoke;
     font-weight: lighter;
   }
@@ -274,17 +275,16 @@ footer {
 
 @media all and(max-width:1260px) {
   .card {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(2, 380px);
-    width: 620px;
-    row-gap: 10px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, auto);
   }
 
   .last-info {
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
-    width: 540px;
-    height: 400px;
+    width: 80%;
+    height: 300px;
+    width: 370px;
 
     button {
       height: 60%;
@@ -294,9 +294,8 @@ footer {
 
 @media all and(max-width:620px) {
   .card {
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(3, 380px);
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(3, auto);
     width: 320px;
-    row-gap: 10px;
   }
 }
