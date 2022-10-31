@@ -74,10 +74,11 @@ header div span {
   background-color: #5e17eb;
   display: flex;
   justify-content: center;
-  min-height: 450px;
+  min-height: 60vh;
 }
 .description div {
   padding: 70px 20% 0 20%;
+  height: 230px;
   color: white;
   text-align: center;
 }
@@ -86,8 +87,8 @@ header div span {
   padding-bottom: 10px;
 }
 .description div p {
-  padding: 20px 0;
   font-size: large;
+  padding: 20px 0;
 }
 
 .experiencia {
@@ -110,20 +111,42 @@ header div span {
   justify-content: center;
 }
 
-.card div {
+.card .card-container {
   width: 250px;
   height: 300px;
   border: 0.5px solid whitesmoke;
   background-color: white;
   box-shadow: 0px 4px 17px -4px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
-.card div h2 {
-  padding-top: 20px;
+.card .card-container .text-card-container {
+  width: 80%;
+  height: 80%;
 }
-.card div p {
+.card .card-container h2 {
+  padding: 10px 0 5px 0;
+}
+.card .card-container h3 {
   font-size: medium;
-  padding: 10px 20px;
+}
+.card .card-container h4 {
+  font-size: small;
+}
+.card .card-container h5 {
+  font-size: x-small;
+}
+.card .card-container p {
+  padding-top: 10px;
+  font-size: medium;
+}
+.card .card-container a {
+  cursor: pointer;
+}
+.card .card-container img {
+  width: 60px;
+  height: 60px;
 }
 
 .proyectos {
@@ -151,7 +174,7 @@ header div span {
 .tarjetas-proyectos {
   padding: 40px 0 200px 0;
   margin: 10px;
-  min-width: 80%;
+  max-width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 260px);
   grid-auto-rows: 185px;
@@ -253,6 +276,20 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.icon-social img {
+  width: 30px;
+  height: 30px;
+}
+
+.lastText {
+  padding-bottom: 10px;
+  font-size: small;
+  font-weight: lighter;
+  color: white;
+}
+.lastText .corazon {
+  color: red;
 }
 
 @media all and (max-width: 1260px) {
